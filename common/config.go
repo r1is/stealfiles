@@ -1,15 +1,22 @@
 package common
 
-var version = "1.0.0"
-
 type Args struct {
-	Sm4key   string
+	Passcode string
 	FileName string
 }
 
 type OssCfg struct {
-	Ak        string `json:"ak"`
-	Sk        string `json:"sk"`
-	BucketURL string `json:"BucketURL"`
-	BatchURL  string `json:"BatchURL"`
+	TmpSecretID  string `json:"TmpSecretId,omitempty"`
+	TmpSecretKey string `json:"TmpSecretKey,omitempty"`
+	SessionToken string `json:"Token,omitempty"`
+	BucketURL    string `json:"BucketURL"`
+	BatchURL     string `json:"BatchURL"`
+}
+type Data struct {
+	Code string `json:"code"`
+}
+
+type Resp struct {
+	Code int    `json:"code"`
+	Msg  string `json:"msg"`
 }
