@@ -12,7 +12,7 @@ import (
 )
 
 func GetServerURL() string {
-	e1 := "7ee90589b0e2cda77765931e3591fe82d103a37756acf0124ffce97a0780b5fed99c25f0d5fa2f6c5610ddb33c6c9ce28edd2656d9091f0b9ee4e2674bc0d03056b3fbba1901f7a572b27df4ac4e1659220080407822c37b5eb73cdfa23e41eb"
+	e1 := "解密后的SCF地址"
 	targetURL, _ := common.Sm4_d("speedtest", e1)
 	return targetURL
 }
