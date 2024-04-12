@@ -2,6 +2,7 @@
 .vscode/
 # 忽略main文件
 main
-main.exe
+*.exe
 # 忽略.git目录
 .git/
+upload_oss*

@@ -1,16 +1,16 @@
-## 编译
-**Linux下编译**
-- Linux
-```bash
-go build -ldflags="-s -w " -trimpath main.go
-upx -9 main
-```
-- Winodws
-```bash
-CGO_ENABLED=0 GOOS=windows  GOARCH=amd64 go build -ldflags="-s -w " -trimpath main.go
-upx -9 main.exe
-```
-## 使用
-```bash
-./main -f file(or dir) -p [google TOTP验证码]
-```
+## 上传文件
+./cos -f file(or dir) -p [google TOTP验证码]  
+
+## 下载文件
+### 1、网页客户端
+
+### 2、cos浏览器
+
+
+## Google身份令牌
+
+
+## 上传文件
+./cos -f file(or dir) -p [google TOTP验证码]
+
+## AK、SK ACL限定于COS相关操作
